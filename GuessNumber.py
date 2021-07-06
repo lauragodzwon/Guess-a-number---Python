@@ -25,9 +25,9 @@ def GenNum():
                     print("You should think only a little bigger!")
             if answers == 1:
                 if guess < number + 10:
-                    print("Your number is smaller than", number+10, "and bigger than", number-10)
+                    print("Your number should be smaller than", number+10, "and bigger than", number-10)
                 elif guess >= number + 10:
-                    print("Your number is smaller than", number+5, "and bigger than", number-5)
+                    print("Your number should be smaller than", number+5, "and bigger than", number-5)
             if answers == 2:     
                 if number%2 == 0:
                     print("The number you are looking for is even")
@@ -39,21 +39,21 @@ def GenNum():
             print("Oh no! Your number is too big") 
             if answers == 0:
                 if guess - 10 > number:
-                    print("Your number is a lot smaller!")
+                    print("Your number should be a lot smaller!")
                 elif guess - 10 < number:
-                    print("Your number is only a little smaller!")
+                    print("Your number should be only a little smaller!")
             if answers == 1:
                 if guess < number + 10:
                     if number - 10 > 0:
-                        print("Your number is smaller than", number+10, "and bigger than", number-10)
+                        print("Your number should be than", number+10, "and bigger than", number-10)
                     else:
-                        print("Your number is smaller than", number+10, "and bigger than 0")
+                        print("Your number should be than", number+10, "and bigger than 0")
                 
                 elif guess >= number + 10:
                     if number - 5 > 0:
-                        print("Your number is smaller than", number+5, "and bigger than", number-5)
+                        print("Your number should be than", number+5, "and bigger than", number-5)
                     else:
-                        print("Your number is smaller than", number+5, "and bigger than 0")
+                        print("Your number should be than", number+5, "and bigger than 0")
             if answers == 2:     
                 if number%2 == 0:
                     print("The number you are looking for is even")
